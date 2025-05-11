@@ -34,7 +34,7 @@ const Skills = () => {
       id="skills"
       className={`skills-section ${isVisible ? "visible" : ""}`}
     >
-      <h2 className="section-title">My Skills</h2>
+      <h2 className="section-title">Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div
