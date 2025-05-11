@@ -139,30 +139,54 @@
 
 
 /* social links / icons */ 
+
+/* Mobile-first social links */
 .social-links {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
-  margin-left: 2rem;
-  padding-left: 2rem;
+  gap: 1rem; /* Reduced gap for mobile */
+  margin-left: 1rem; /* Reduced margin */
+  padding-left: 1rem; /* Reduced padding */
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .social-links a {
   color: #aaa;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  font-size: 1.1rem; /* Slightly smaller */
+  transition: all 0.3s ease;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; /* Fixed touch target size */
+  height: 36px;
 }
 
+/* Active state for mobile instead of hover */
+.social-links a:active,
 .social-links a:hover {
   color: #4dabf7;
   transform: translateY(-2px);
 }
 
-
 .fab {
   display: inline-block;
   width: 1em;
   text-align: center;
+  font-size: 1.2rem; /* Ensures icon visibility */
+}
+
+/* Tablet and Desktop */
+@media (min-width: 768px) {
+  .social-links {
+    gap: 1.2rem;
+    margin-left: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .social-links a {
+    font-size: 1.2rem;
+    width: auto; /* Auto width on desktop */
+    height: auto;
+  }
 }
