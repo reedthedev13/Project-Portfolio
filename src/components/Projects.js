@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "../styles/styles.css";
+import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
