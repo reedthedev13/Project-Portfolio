@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Golf ScoreCard",
+      title: "Golf Score Card",
       description:
         "A online tool that gives you the ability to score and store 18 hole golf rounds.",
       technologies: ["React", "TailwindCSS", "Go"],
@@ -16,9 +16,9 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Weather Forcast App",
+      title: "Weather Forecast App",
       description:
-        "A fully functional 14-day weather forecast app for St.Louis, Missouri",
+        "A fully functional 14-day weather forecast app for St.Louis, Missouri.",
       technologies: [
         "React",
         "TailWindCSS",
