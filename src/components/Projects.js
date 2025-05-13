@@ -13,7 +13,7 @@ const Projects = () => {
       technologies: ["ReactJS", "TailwindCSS"],
       image: GolfScoreCardImage,
       githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
-      liveDemo: "n/a",
+      liveDemo: "https://golf-score-card-zeta.vercel.app/",
     },
     {
       id: 2,
