@@ -1,7 +1,7 @@
 import React from "react";
 import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
-import GolfScoreCardImage from "../assets/GolfScoreCardSS.png";
+import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
 
 const Projects = () => {
   const projects = [
