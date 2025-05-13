@@ -23,7 +23,7 @@ const ProjectCard = ({ project }) => {
           <div>
             <div className="project-links">
               <a
-                href="{project.githubLink"
+                href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-link"

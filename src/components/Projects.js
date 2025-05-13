@@ -1,6 +1,7 @@
 import React from "react";
 import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
+import GolfScoreCardImage from "../assets/GolfScoreCardSS.png";
 
 const Projects = () => {
   const projects = [
@@ -9,9 +10,9 @@ const Projects = () => {
       title: "Golf Score Card",
       description:
         "A online tool that gives you the ability to score and store 18 hole golf rounds.",
-      technologies: ["React", "TailwindCSS", "Go"],
-      image: "n/a",
-      githubLink: "n/a",
+      technologies: ["ReactJS", "TailwindCSS"],
+      image: GolfScoreCardImage,
+      githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
       liveDemo: "n/a",
     },
     {
