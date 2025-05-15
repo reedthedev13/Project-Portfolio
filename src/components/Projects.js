@@ -44,6 +44,25 @@ const Projects = () => {
       githubLink: "n/a",
       liveDemo: "n/a",
     },
+    {
+      id: 5,
+      title: "Fitness Tracker",
+      description:
+        "Track workouts by type, date, and reps. Includes analytics and charts",
+      technologies: ["React", "Python", "TailwindCSS", "REST API"],
+      image: "n/a",
+      githubLink: "n/a",
+      liveDemo: "n/a",
+    },
+    {
+      id: 6,
+      title: "To-Do List",
+      description: "Organize Tasks into categories, and save your data.",
+      technologies: ["React", "Python", "Flask", "TailwindCSS"],
+      image: "n/a",
+      githubLink: "n/a",
+      liveDemo: "n/a",
+    },
   ];
 
   return (
