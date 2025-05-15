@@ -17,14 +17,10 @@ const Projects = () => {
     },
     {
       id: 2,
-      title: "Weather Forecast App",
+      title: "Personal Finance Dashboard",
       description:
-        "A fully functional 14-day weather forecast app for St.Louis, Missouri.",
-      technologies: [
-        "React",
-        "TailWindCSS",
-        "Public Weather API integration with GO",
-      ],
+        "Includes: Expense tracking, monthly budget visualization, and CSV import",
+      technologies: ["React", "Chart.js", "GO"],
       image: "n/a",
       githubLink: "n/a",
       liveDemo: "n/a",
