@@ -35,6 +35,15 @@ const Projects = () => {
       githubLink: "n/a",
       liveDemo: "n/a",
     },
+    {
+      id: 4,
+      title: "Note-Taking Web App",
+      description: "Allows users to create and store notes",
+      technologies: ["React", "JavaScript", "TailwindCSS"],
+      image: "n/a",
+      githubLink: "n/a",
+      liveDemo: "n/a",
+    },
   ];
 
   return (
