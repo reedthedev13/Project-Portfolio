@@ -20,7 +20,17 @@ const Projects = () => {
       title: "Personal Finance Dashboard",
       description:
         "Includes: Expense tracking, monthly budget visualization, and CSV import",
-      technologies: ["React", "Chart.js", "GO"],
+      technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
+      image: "n/a",
+      githubLink: "n/a",
+      liveDemo: "n/a",
+    },
+    {
+      id: 3,
+      title: "Weather Forecast App",
+      description:
+        "Fully functional 14-day weather forecast for St.Louis, Missouri",
+      technologies: ["React", "JavaScript", "TailwindCSS", "API integration"],
       image: "n/a",
       githubLink: "n/a",
       liveDemo: "n/a",
