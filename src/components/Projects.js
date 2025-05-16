@@ -2,6 +2,7 @@ import React from "react";
 import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
 import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
+import FinanceTracker from "../assets/finance-tracker.png";
 
 const Projects = () => {
   const projects = [
@@ -21,9 +22,9 @@ const Projects = () => {
       description:
         "Includes: Expense tracking, monthly budget visualization, and CSV import",
       technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
-      image: "n/a",
-      githubLink: "n/a",
-      liveDemo: "n/a",
+      image: FinanceTracker,
+      githubLink: "https://github.com/reedthedev13/Finance-Dashboard-frontend",
+      liveDemo: "https://finance-dashboard-frontend-eight.vercel.app/",
     },
     {
       id: 3,
