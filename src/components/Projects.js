@@ -53,8 +53,8 @@ const Projects = () => {
         "Track workouts by type, date, and reps. Includes analytics and charts",
       technologies: ["React", "Python", "TailwindCSS", "REST API"],
       image: FitnessTrack,
-      githubLink: "n/a",
-      liveDemo: "n/a",
+      githubLink: "https://github.com/reedthedev13/fitess-tracker",
+      liveDemo: "https://fitess-tracker.vercel.app/",
     },
     {
       id: 6,
