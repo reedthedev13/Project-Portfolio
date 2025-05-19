@@ -3,6 +3,7 @@ import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
 import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
 import FinanceTracker from "../assets/finance-tracker.png";
+import FitnessTrack from "../assets/FitnessTrackSS.png";
 
 const Projects = () => {
   const projects = [
@@ -51,7 +52,7 @@ const Projects = () => {
       description:
         "Track workouts by type, date, and reps. Includes analytics and charts",
       technologies: ["React", "Python", "TailwindCSS", "REST API"],
-      image: "n/a",
+      image: FitnessTrack,
       githubLink: "n/a",
       liveDemo: "n/a",
     },
