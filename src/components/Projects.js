@@ -4,6 +4,7 @@ import ProjectCard from "../components/ProjectCard";
 import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
 import FinanceTracker from "../assets/finance-tracker.png";
 import FitnessTrack from "../assets/FitnessTrackSS.png";
+import WeatherApp from "../assets/WeatherAppSS.png";
 
 const Projects = () => {
   const projects = [
@@ -33,9 +34,9 @@ const Projects = () => {
       description:
         "Fully functional 14-day weather forecast for St.Louis, Missouri",
       technologies: ["React", "JavaScript", "TailwindCSS", "API integration"],
-      image: "n/a",
-      githubLink: "n/a",
-      liveDemo: "n/a",
+      image: WeatherApp,
+      githubLink: "https://github.com/reedthedev13/14-day-weather",
+      liveDemo: "https://14-day-weather.vercel.app/",
     },
     {
       id: 4,
