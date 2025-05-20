@@ -5,6 +5,7 @@ import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
 import FinanceTracker from "../assets/FinanceTrackerSS.png";
 import FitnessTrack from "../assets/FitnessTrackSS.png";
 import WeatherApp from "../assets/WeatherAppSS.png";
+import NoteTaking from "../assets/NoteTakingSS.png";
 
 const Projects = () => {
   const projects = [
@@ -43,7 +44,7 @@ const Projects = () => {
       title: "Note-Taking Web App",
       description: "Allows users to create and store notes",
       technologies: ["React", "JavaScript", "TailwindCSS"],
-      image: "n/a",
+      image: NoteTaking,
       githubLink: "n/a",
       liveDemo: "n/a",
     },
