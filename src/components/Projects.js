@@ -2,7 +2,7 @@ import React from "react";
 import projectstyles from "../styles/projects.css";
 import ProjectCard from "../components/ProjectCard";
 import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
-import FinanceTracker from "../assets/finance-tracker.png";
+import FinanceTracker from "../assets/FinanceTrackerSS.png";
 import FitnessTrack from "../assets/FitnessTrackSS.png";
 import WeatherApp from "../assets/WeatherAppSS.png";
 
