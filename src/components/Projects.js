@@ -46,8 +46,8 @@ const Projects = () => {
       description: "Allows users to create and store notes",
       technologies: ["React", "JavaScript", "TailwindCSS"],
       image: NoteTaking,
-      githubLink: "n/a",
-      liveDemo: "n/a",
+      githubLink: "https://github.com/reedthedev13/note-take-app-fix",
+      liveDemo: "https://note-take-app-fix.vercel.app/",
     },
     {
       id: 5,
