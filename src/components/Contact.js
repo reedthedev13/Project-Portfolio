@@ -1,30 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import emailjs from "emailjs-com";
 import ContactStyles from "../styles/contact.css";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const [submitted, setSubmitted] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const formRef = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
-    setTimeout(() => setSubmitted(false), 3000);
+
+    emailjs
+      .sendForm(
+        "service_qgvywl7",
+        "template_185wagv",
+        formRef.current,
+        "TLv86dt9Nn2KTEu1Q"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.text);
+          setSubmitted(true);
+          setTimeout(() => setSubmitted(false), 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+
+    e.target.reset();
   };
 
   return (
@@ -59,41 +62,20 @@ const Contact = () => {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="contact-form">
+          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
             <div className="form-group">
               <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
+              <input type="text" name="name" required />
             </div>
 
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
+              <input type="email" name="email" required />
             </div>
 
             <div className="form-group">
               <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                value={formData.message}
-                onChange={handleChange}
-                required
-              ></textarea>
+              <textarea name="message" rows="5" required></textarea>
             </div>
 
             <button type="submit" className="submit-btn">
