@@ -6,6 +6,7 @@ import FinanceTracker from "../assets/FinanceTrackerSS.png";
 import FitnessTrack from "../assets/FitnessTrackSS.png";
 import WeatherApp from "../assets/WeatherAppSS.png";
 import NoteTaking from "../assets/NoteTakingSS.png";
+import ToDoList from "../assets/TDLSS.png";
 
 const Projects = () => {
   const projects = [
@@ -62,10 +63,10 @@ const Projects = () => {
       id: 6,
       title: "To-Do List",
       description: "Organize Tasks into categories, and save your data.",
-      technologies: ["React", "Python", "Flask", "TailwindCSS"],
-      image: "n/a",
-      githubLink: "n/a",
-      liveDemo: "n/a",
+      technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
+      image: ToDoList,
+      githubLink: "https://github.com/reedthedev13/To-do-list-",
+      liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
     },
   ];
 
