@@ -24,7 +24,7 @@ const Projects = () => {
       id: 2,
       title: "Personal Finance Dashboard",
       description:
-        "Includes: Expense tracking, monthly budget visualization, and CSV import",
+        "Includes: Expense tracking, monthly budget visualization, and CSV import - (Application may load slower due to backend hosting service, please allow up to 50 seconds!)",
       technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
       image: FinanceTracker,
       githubLink: "https://github.com/reedthedev13/Finance-Dashboard-frontend",
