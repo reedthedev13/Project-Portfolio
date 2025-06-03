@@ -53,7 +53,7 @@ const Projects = () => {
       id: 5,
       title: "Fitness Tracker",
       description:
-        "Track workouts by type, date, and reps. Includes analytics and charts",
+        "Track workouts by type, date, and reps. Includes analytics and charts - (Application may load slower due to backend hosting service, please allow up to 50 seconds!)",
       technologies: ["React", "Python", "TailwindCSS", "REST API"],
       image: FitnessTrack,
       githubLink: "https://github.com/reedthedev13/fitess-tracker",
@@ -62,7 +62,8 @@ const Projects = () => {
     {
       id: 6,
       title: "To-Do List",
-      description: "Organize Tasks into categories, and save your data.",
+      description:
+        "Organize Tasks into categories, and save your data - (Application may load slower due to backend hosting service, please allow up to 50 seconds!)",
       technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
       image: ToDoList,
       githubLink: "https://github.com/reedthedev13/To-do-list-",
