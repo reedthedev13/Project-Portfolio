@@ -74,9 +74,9 @@ const Projects = () => {
       title: "E-Commerce ",
       description: "Product listing, cart logic, checkout flow",
       technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
-      image: ToDoList,
-      githubLink: "https://github.com/reedthedev13/To-do-list-",
-      liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
+      image: NA,
+      githubLink: "N/A",
+      liveDemo: "N/A",
     },
   ];
 
