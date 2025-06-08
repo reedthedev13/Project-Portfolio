@@ -69,6 +69,15 @@ const Projects = () => {
       githubLink: "https://github.com/reedthedev13/To-do-list-",
       liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
     },
+    {
+      id: 7,
+      title: "E-Commerce ",
+      description: "Product listing, cart logic, checkout flow",
+      technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
+      image: ToDoList,
+      githubLink: "https://github.com/reedthedev13/To-do-list-",
+      liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
+    },
   ];
 
   return (
