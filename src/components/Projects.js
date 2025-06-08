@@ -74,7 +74,7 @@ const Projects = () => {
       title: "E-Commerce ",
       description: "Product listing, cart logic, checkout flow",
       technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
-      image: NA,
+      image: ToDoList,
       githubLink: "N/A",
       liveDemo: "N/A",
     },
