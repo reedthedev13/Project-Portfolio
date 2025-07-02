@@ -46,14 +46,14 @@ const Contact = () => {
             </p>
             <div className="social-links">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/reedthedev13"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <i className="fab fa-github"></i>
               </a>
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/in/reed-lathrop-3370b4359/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
