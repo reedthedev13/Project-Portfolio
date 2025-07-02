@@ -71,9 +71,29 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "E-Commerce ",
+      title: "E-Commerce app",
       description: "Product listing, cart logic, checkout flow",
-      technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
+      technologies: ["TypeScript", "TailWindCSS", "GO", "Gin"],
+      image: ToDoList,
+      githubLink: "N/A",
+      liveDemo: "N/A",
+    },
+    {
+      id: 8,
+      title: "Job Application Tracker",
+      description:
+        "Add & update job applications with status (applied, interviewing, offer, rejected)",
+      technologies: ["TypeScript", "React", "TailWindCSS", "Firebase"],
+      image: ToDoList,
+      githubLink: "N/A",
+      liveDemo: "N/A",
+    },
+    {
+      id: 9,
+      title: "Stock Watchlist App",
+      description:
+        "Search and favorite stocks. View price, volume, and 24hr change. ",
+      technologies: ["TypeScript", "React", "CoinGecko API", "Tailwind"],
       image: ToDoList,
       githubLink: "N/A",
       liveDemo: "N/A",
