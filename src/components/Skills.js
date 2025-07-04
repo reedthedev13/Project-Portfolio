@@ -19,14 +19,18 @@ const Skills = () => {
   }, []);
 
   const skills = [
-    { name: "ReactJS" },
+    { name: "React" },
+    { name: "Typescript" },
     { name: "JavaScript" },
-    { name: "GO" },
+    { name: "Go" },
     { name: "Python" },
     { name: "HTML" },
-    { name: "CSS / TailWindCSS" },
+    { name: "TailWindCSS" },
+    { name: "CSS" },
     { name: "Node.js" },
     { name: "Git" },
+    { name: "Gin" },
+    { name: "SQL" },
   ];
 
   return (
