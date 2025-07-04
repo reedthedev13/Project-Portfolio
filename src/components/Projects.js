@@ -71,7 +71,7 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "E-Commerce app",
+      title: "E-Commerce App",
       description: "Product listing, cart logic, checkout flow",
       technologies: ["TypeScript", "TailWindCSS", "GO", "Gin"],
       image: ToDoList,
