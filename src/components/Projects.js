@@ -74,8 +74,8 @@ const Projects = () => {
       description: "Product listing, cart logic, and checkout flow.",
       technologies: ["TypeScript", "TailWindCSS", "GO", "Gin"],
       image: ToDoList,
-      githubLink: "N/A",
-      liveDemo: "N/A",
+      githubLink: "",
+      liveDemo: "",
     },
     {
       id: 8,
@@ -84,8 +84,8 @@ const Projects = () => {
         "Add & update job applications with status (applied, interviewing, offer, rejected).",
       technologies: ["TypeScript", "React", "TailWindCSS", "Firebase"],
       image: ToDoList,
-      githubLink: "N/A",
-      liveDemo: "N/A",
+      githubLink: "",
+      liveDemo: "",
     },
     {
       id: 9,
@@ -94,15 +94,15 @@ const Projects = () => {
         "Search and favorite stocks. View price, volume, and 24hr change.",
       technologies: ["TypeScript", "React", "CoinGecko API", "Tailwind"],
       image: ToDoList,
-      githubLink: "N/A",
-      liveDemo: "N/A",
+      githubLink: "",
+      liveDemo: "",
     },
   ];
 
   return (
     <section id="projects" className="py-16 bg-gray-100 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-12 text-center">
+        <h2 className="text-3xl font-extrabold text-gray-800 dark:text-white mb-12 text-center">
           Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
