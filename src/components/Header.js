@@ -6,14 +6,20 @@ const Header = () => {
   return (
     <header className="bg-gray-900 text-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo Section */}
-        <div className="flex flex-col items-start space-y-1 cursor-pointer transition-colors duration-300 hover:text-teal-400">
-          <h1 className="text-3xl font-extrabold tracking-tight">
-            Reed Lathrop
-          </h1>
-          <p className="text-sm text-gray-400 uppercase tracking-wider">
-            Full Stack Developer
-          </p>
+        <div className="flex items-center space-x-4 cursor-pointer transition-colors duration-300 hover:text-teal-400">
+          <img
+            src="/pfprtl.png" // Replace with your actual image path or URL
+            alt="Logo"
+            className="w-12 h-12 rounded-full object-cover"
+          />
+          <div className="flex flex-col">
+            <h1 className="text-3xl font-extrabold tracking-tight">
+              Reed Lathrop
+            </h1>
+            <p className="text-sm text-gray-400 uppercase tracking-wider">
+              Full Stack Developer
+            </p>
+          </div>
         </div>
 
         {/* Desktop Navigation */}
