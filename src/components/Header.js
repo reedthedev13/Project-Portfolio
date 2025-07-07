@@ -100,18 +100,18 @@ const Header = () => {
       {menuOpen && (
         <nav className="sm:hidden bg-gray-800 px-4 py-4 space-y-4">
           <a
-            href="#projects"
-            className="block text-white hover:text-teal-400"
-            onClick={() => setMenuOpen(false)}
-          >
-            Projects
-          </a>
-          <a
             href="#skills"
             className="block text-white hover:text-teal-400"
             onClick={() => setMenuOpen(false)}
           >
             Skills
+          </a>
+          <a
+            href="#projects"
+            className="block text-white hover:text-teal-400"
+            onClick={() => setMenuOpen(false)}
+          >
+            Projects
           </a>
           <a
             href="#contact"
