@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import skills from "../styles/skills.css";
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -9,57 +8,52 @@ const Skills = () => {
       const element = document.getElementById("skills");
       if (element) {
         const top = element.getBoundingClientRect().top;
-        setIsVisible(top < window.innerHeight - 100);
+        setIsVisible(top < window.innerHeight - 20);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on initial render
+    handleScroll(); // initial check
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const skills = [
-    { name: "React" },
-    { name: "Typescript" },
-    { name: "JavaScript" },
-    { name: "Go" },
-    { name: "Python" },
-    { name: "HTML" },
-    { name: "TailWindCSS" },
-    { name: "CSS" },
-    { name: "Node.js" },
-    { name: "Git" },
-    { name: "Gin" },
-    { name: "SQL" },
+    "React",
+    "Typescript",
+    "JavaScript",
+    "Go",
+    "Python",
+    "HTML",
+    "TailWindCSS",
+    "CSS",
+    "Node.js",
+    "Git",
+    "Gin",
+    "SQL",
   ];
 
   return (
     <section
       id="skills"
-      className={`skills-section ${isVisible ? "visible" : ""}`}
+      className={` w-full transition-opacity duration-700 ${
+        isVisible ? "opacity-100" : "opacity-0"
+      } bg-gray-900`}
     >
-      <h2 className="section-title">Skills</h2>
-      <div className="skills-grid">
-        {skills.map((skill, index) => (
-          <div
-            key={index}
-            className="skill-card"
-            style={{ "--skill-color": skill.color }}
-          >
-            <div className="skill-icon">{skill.icon}</div>
-            <h3 className="skill-name">{skill.name}</h3>
-            <div className="skill-dots">
-              {[...Array(5)].map((_, i) => (
-                <span
-                  key={i}
-                  className={`dot ${
-                    i < Math.floor(index / 2) + 3 ? "active" : ""
-                  }`}
-                />
-              ))}
+      <div className="max-w-6xl mx-auto px-4 py-8 rounded-md">
+        <h2 className="text-3xl font-bold text-center mb-12 text-white">
+          Skills
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+          {skills.map((skill, index) => (
+            <div
+              key={index}
+              className="flex items-center justify-center rounded-md border border-gray-700 py-3 text-gray-300 font-semibold 
+                         transform transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:border-indigo-400 cursor-pointer"
+            >
+              {skill}
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

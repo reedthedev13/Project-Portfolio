@@ -18,7 +18,7 @@
 }
 
 .section-title::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -142,12 +142,11 @@
   text-align: center;
 }
 
-
 @media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
   }
-  
+
   .section-title {
     font-size: 2rem;
   }
@@ -158,14 +157,12 @@
   font-size: 16px;
 }
 
-
 @media (min-width: 768px) {
   .component {
     padding: 1.5rem;
     font-size: 18px;
   }
 }
-
 
 @media (min-width: 1024px) {
   .component {

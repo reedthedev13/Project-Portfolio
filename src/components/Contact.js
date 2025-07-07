@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import emailjs from "emailjs-com";
-import ContactStyles from "../styles/contact.css";
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -31,24 +30,32 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="contact-section">
-      <div className="contact-container">
-        <h2 className="section-title">Get In Touch</h2>
+    <section id="contact" className="py-16 px-4 bg-gray-900">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-white mb-10">
+          Get In Touch
+        </h2>
 
-        <div className="contact-content">
-          <div className="contact-info">
-            <h3>Contact Information</h3>
+        <div className="flex flex-col md:flex-row md:space-x-12 space-y-8 md:space-y-0">
+          {/* Contact Info */}
+          <div className="md:w-1/2 text-gray-300 space-y-4">
+            <h3 className="text-xl font-semibold text-white">
+              Contact Information
+            </h3>
             <p>
-              <i className="fas fa-envelope"></i> lathropreed713@gmail.com
+              <i className="fas fa-envelope mr-2 text-teal-400"></i>
+              lathropreed713@gmail.com
             </p>
             <p>
-              <i className="fas fa-phone"></i> (314) 616-0168
+              <i className="fas fa-phone mr-2 text-teal-400"></i>
+              (314) 616-0168
             </p>
-            <div className="social-links">
+            <div className="flex space-x-4 mt-4">
               <a
                 href="https://github.com/reedthedev13"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-gray-400 hover:text-white text-xl transition"
               >
                 <i className="fab fa-github"></i>
               </a>
@@ -56,34 +63,73 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/reed-lathrop-3370b4359/"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-teal-400 hover:text-teal-600 text-xl transition"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
 
-          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" name="name" required />
+          {/* Contact Form */}
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="md:w-1/2 bg-gray-800 p-6 rounded-lg shadow-lg space-y-4"
+          >
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-300"
+              >
+                Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                required
+                className="w-full mt-1 px-3 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              />
             </div>
 
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" name="email" required />
+            <div>
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-300"
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                required
+                className="w-full mt-1 px-3 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              />
             </div>
 
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea name="message" rows="5" required></textarea>
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-300"
+              >
+                Message
+              </label>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                className="w-full mt-1 px-3 py-2 bg-gray-700 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-400"
+              ></textarea>
             </div>
 
-            <button type="submit" className="submit-btn">
+            <button
+              type="submit"
+              className="w-full bg-teal-500 hover:bg-teal-600 text-white py-2 rounded-md transition"
+            >
               Send Message
             </button>
 
             {submitted && (
-              <div className="success-message">
+              <div className="text-teal-400 font-medium text-sm mt-2">
                 Thank you! Your message has been sent.
               </div>
             )}
