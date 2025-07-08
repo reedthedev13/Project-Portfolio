@@ -53,7 +53,7 @@ const Header = () => {
               <i className="fab fa-github text-xl"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/reed-lathrop-3370b4359/"
+              href="https://www.linkedin.com/in/reed-lathrop/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-teal-400"
@@ -130,7 +130,7 @@ const Header = () => {
               <i className="fab fa-github text-xl"></i>
             </a>
             <a
-              href="https://www.linkedin.com/in/reed-lathrop-3370b4359/"
+              href="https://www.linkedin.com/in/reed-lathrop/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white hover:text-teal-400"

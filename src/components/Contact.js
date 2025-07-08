@@ -63,7 +63,7 @@ const Contact = () => {
                   <i className="fab fa-github"></i>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/reed-lathrop-3370b4359/"
+                  href="https://www.linkedin.com/in/reed-lathrop/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-teal-400 hover:text-teal-600 text-xl transition"
