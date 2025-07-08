@@ -96,7 +96,7 @@ const Projects = () => {
       technologies: ["TypeScript", "React", "TailWindCSS", "TwelveData API"],
       image: StockWatch,
       githubLink: "https://github.com/reedthedev13/Stock-Watchlist-",
-      liveDemo: "",
+      liveDemo: "https://stock-watchlist-alpha.vercel.app/",
     },
   ];
 
