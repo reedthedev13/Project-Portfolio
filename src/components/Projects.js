@@ -6,6 +6,7 @@ import FitnessTrack from "../assets/FitnessTrackSS.png";
 import WeatherApp from "../assets/WeatherAppSS.png";
 import NoteTaking from "../assets/NoteTakingSS.png";
 import ToDoList from "../assets/TDLSS.png";
+import StockWatch from "../assets/StockWatch.png";
 
 const Projects = () => {
   const projects = [
@@ -93,8 +94,8 @@ const Projects = () => {
       description:
         "Search and favorite stocks. View price, volume, and 24hr change.",
       technologies: ["TypeScript", "React", "CoinGecko API", "Tailwind"],
-      image: ToDoList,
-      githubLink: "",
+      image: StockWatch,
+      githubLink: "https://github.com/reedthedev13/Stock-Watchlist-",
       liveDemo: "",
     },
   ];
