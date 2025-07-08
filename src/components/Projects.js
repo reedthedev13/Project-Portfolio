@@ -92,8 +92,8 @@ const Projects = () => {
       id: 9,
       title: "Stock Watchlist App",
       description:
-        "Search and favorite stocks. View price, volume, and 24hr change.",
-      technologies: ["TypeScript", "React", "CoinGecko API", "Tailwind"],
+        "Search and create a watchlist of stocks. View and 24hr change.",
+      technologies: ["TypeScript", "React", "TailWindCSS", "TwelveData API"],
       image: StockWatch,
       githubLink: "https://github.com/reedthedev13/Stock-Watchlist-",
       liveDemo: "",
