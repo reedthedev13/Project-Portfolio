@@ -71,9 +71,10 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "E-Commerce App",
-      description: "Product listing, cart logic, and checkout flow.",
-      technologies: ["TypeScript", "TailWindCSS", "GO", "Gin"],
+      title: "AI-Powered Markdown Notes App",
+      description:
+        "Live markdown preview, Ask AI to summarize, rewrite, or turn notes into flashcards, saves notes to user account",
+      technologies: ["React", "Typescript", "OpenAI API", "Firebase"],
       image: ToDoList,
       githubLink: "",
       liveDemo: "",
