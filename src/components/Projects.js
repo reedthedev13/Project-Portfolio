@@ -7,6 +7,7 @@ import WeatherApp from "../assets/WeatherAppSS.png";
 import NoteTaking from "../assets/NoteTakingSS.png";
 import ToDoList from "../assets/TDLSS.png";
 import StockWatch from "../assets/StockWatch.png";
+import JobAppPic from "../assets/JobAppPic.png";
 
 const Projects = () => {
   const projects = [
@@ -85,9 +86,9 @@ const Projects = () => {
       description:
         "Add & update job applications with status (applied, interviewing, offer, rejected).",
       technologies: ["TypeScript", "React", "TailWindCSS", "Firebase"],
-      image: ToDoList,
-      githubLink: "",
-      liveDemo: "",
+      image: JobAppPic,
+      githubLink: "https://github.com/reedthedev13/Job-Application-Tracker2",
+      liveDemo: "https://job-application-tracker2.vercel.app/",
     },
     {
       id: 9,
