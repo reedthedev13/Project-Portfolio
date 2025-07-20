@@ -72,10 +72,10 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "AI-Powered Markdown Notes App",
+      title: "Recipe & Meal Planner",
       description:
-        "Live markdown preview, Ask AI to summarize, rewrite, or turn notes into flashcards, saves notes to user account",
-      technologies: ["React", "Typescript", "OpenAI API", "Firebase"],
+        "Users can browse, add, and save recipes. Generate weekly meal plans. & view nutritional info",
+      technologies: ["React", "Typescript", "TailwindCSS", "GO"],
       image: ToDoList,
       githubLink: "",
       liveDemo: "",
