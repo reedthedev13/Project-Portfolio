@@ -8,6 +8,7 @@ import NoteTaking from "../assets/NoteTakingSS.png";
 import ToDoList from "../assets/TDLSS.png";
 import StockWatch from "../assets/StockWatch.png";
 import JobAppPic from "../assets/JobAppPic.png";
+import MealPlanPic from "../assets/MealPlanPic.png";
 
 const Projects = () => {
   const projects = [
@@ -76,8 +77,8 @@ const Projects = () => {
       description:
         "Users can browse, add, and save recipes. Generate weekly meal plans. & view nutritional info",
       technologies: ["React", "Typescript", "TailwindCSS", "GO"],
-      image: ToDoList,
-      githubLink: "",
+      image: MealPlanPic,
+      githubLink: "https://github.com/reedthedev13/Meal-Planner-App",
       liveDemo: "",
     },
     {
