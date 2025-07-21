@@ -79,7 +79,7 @@ const Projects = () => {
       technologies: ["React", "Typescript", "TailwindCSS", "GO"],
       image: MealPlanPic,
       githubLink: "https://github.com/reedthedev13/Meal-Planner-App",
-      liveDemo: "",
+      liveDemo: "meal-planner-app-sepia.vercel.app",
     },
     {
       id: 8,
