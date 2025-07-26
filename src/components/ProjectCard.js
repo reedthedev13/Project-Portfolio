@@ -11,6 +11,13 @@ const ProjectCard = ({ project }) => {
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
+            srcSet={`
+    ${project.image} 400w,
+    ${project.image} 800w,
+    ${project.image} 1200w,
+    ${project.image} 1600w
+  `}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </div>
 
