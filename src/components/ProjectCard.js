@@ -6,11 +6,11 @@ const ProjectCard = ({ project }) => {
     <MotionWrapper>
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md transition hover:shadow-lg hover:-translate-y-1 duration-300 flex flex-col h-full">
         {/* Image */}
-        <div className="h-40 overflow-hidden rounded-t-xl">
+        <div className="w-full aspect-[16/9] overflow-hidden rounded-xl shadow-md">
           <img
             src={project.image}
             alt={project.title}
-            className="w-full h-48 object-cover rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+            className="w-full h-full object-cover"
           />
         </div>
 
