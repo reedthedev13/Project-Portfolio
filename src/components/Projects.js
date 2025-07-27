@@ -1,16 +1,14 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
-import FinanceTracker from "../assets/FinanceTrackerSS.png";
-import WeatherApp from "../assets/WeatherAppSS.png";
-import NoteTaking from "../assets/NoteTakingSS.png";
-import ToDoList from "../assets/TDLSS.png";
-import StockWatch from "../assets/StockWatch.png";
-import JobAppPic from "../assets/JobAppPic.png";
+import NoteTaking2 from "../assets/NoteTakingSS2.jpg";
+import ToDoList2 from "../assets/TDLSS2.jpg";
+import StockWatch2 from "../assets/StockWatch2.jpg";
+import JobAppPic2 from "../assets/JobAppPic2.jpg";
 import MealPlanPic from "../assets/MealPlanPic.png";
 import FitnessTracker from "../assets/FitnessTrack2.jpg";
 import WeatherApp2 from "../assets/WeatherAppSS2.jpg";
-import GolfScore4 from "../assets/GolfScoreCardSS4.jpg";
+import GolfScore2 from "../assets/GolfScoreCardSS4.jpg";
+import FinanceTracker2 from "../assets/FinanceTrackerSS2.jpg";
 
 const Projects = () => {
   const projects = [
@@ -20,7 +18,7 @@ const Projects = () => {
       description:
         "An online tool that gives you the ability to score and store 18-hole golf rounds.",
       technologies: ["ReactJS", "TailwindCSS"],
-      image: GolfScore4,
+      image: GolfScore2,
       githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
       liveDemo: "https://golf-score-card-zeta.vercel.app/",
     },
@@ -30,7 +28,7 @@ const Projects = () => {
       description:
         "Includes: Expense tracking, monthly budget visualization, and CSV import - (App may load slowly due to backend hosting service)",
       technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
-      image: FinanceTracker,
+      image: FinanceTracker2,
       githubLink: "https://github.com/reedthedev13/Finance-Dashboard-frontend",
       liveDemo: "https://finance-dashboard-frontend-eight.vercel.app/",
     },
@@ -49,7 +47,7 @@ const Projects = () => {
       title: "Note-Taking Web App",
       description: "Allows users to create and store notes.",
       technologies: ["React", "JavaScript", "TailwindCSS"],
-      image: NoteTaking,
+      image: NoteTaking2,
       githubLink: "https://github.com/reedthedev13/note-take-app-fix",
       liveDemo: "https://note-take-app-fix.vercel.app/",
     },
@@ -69,7 +67,7 @@ const Projects = () => {
       description:
         "Organize tasks into categories and persist data - (App may load slowly due to backend hosting service)",
       technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
-      image: ToDoList,
+      image: ToDoList2,
       githubLink: "https://github.com/reedthedev13/To-do-list-",
       liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
     },
@@ -89,7 +87,7 @@ const Projects = () => {
       description:
         "Add & update job applications with status (applied, interviewing, offer, rejected).",
       technologies: ["TypeScript", "React", "TailWindCSS", "Firebase"],
-      image: JobAppPic,
+      image: JobAppPic2,
       githubLink: "https://github.com/reedthedev13/Job-Application-Tracker2",
       liveDemo: "https://job-application-tracker2.vercel.app/",
     },
@@ -99,7 +97,7 @@ const Projects = () => {
       description:
         "Search and create a watchlist of stocks. View and 24hr change.",
       technologies: ["TypeScript", "React", "TailWindCSS", "TwelveData API"],
-      image: StockWatch,
+      image: StockWatch2,
       githubLink: "https://github.com/reedthedev13/Stock-Watchlist-",
       liveDemo: "https://stock-watchlist-alpha.vercel.app/",
     },
