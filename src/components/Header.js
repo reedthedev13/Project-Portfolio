@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-4 cursor-pointer transition-colors duration-300 hover:text-teal-400">
           <img
-            src="/pfprtl.png" // Replace with your actual image path or URL
+            src="/pfprtl.png"
             alt="Logo"
             className="w-12 h-12 rounded-full object-cover"
           />
@@ -42,7 +43,6 @@ const Header = () => {
           >
             Contact
           </a>
-
           <div className="flex space-x-4 ml-4">
             <a
               href="https://github.com/reedthedev13"
@@ -69,7 +69,6 @@ const Header = () => {
           className="sm:hidden focus:outline-none"
           aria-label="Toggle menu"
         >
-          {/* Hamburger icon */}
           <svg
             className="w-6 h-6 text-white"
             fill="none"
@@ -96,50 +95,61 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile menu */}
-      {menuOpen && (
-        <nav className="sm:hidden bg-gray-800 px-4 py-4 space-y-4">
-          <a
-            href="#skills"
-            className="block text-white hover:text-teal-400"
-            onClick={() => setMenuOpen(false)}
+      {/* Animated Mobile Menu */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            key="mobile-menu"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="sm:hidden bg-gray-800 px-4 py-4 overflow-hidden"
           >
-            Skills
-          </a>
-          <a
-            href="#projects"
-            className="block text-white hover:text-teal-400"
-            onClick={() => setMenuOpen(false)}
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="block text-white hover:text-teal-400"
-            onClick={() => setMenuOpen(false)}
-          >
-            Contact
-          </a>
-          <div className="flex space-x-4 mt-2">
-            <a
-              href="https://github.com/reedthedev13"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-teal-400"
-            >
-              <i className="fab fa-github text-xl"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/reed-lathrop/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white hover:text-teal-400"
-            >
-              <i className="fab fa-linkedin-in text-xl"></i>
-            </a>
-          </div>
-        </nav>
-      )}
+            <nav className="space-y-4">
+              <a
+                href="#skills"
+                className="block text-white hover:text-teal-400"
+                onClick={() => setMenuOpen(false)}
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                className="block text-white hover:text-teal-400"
+                onClick={() => setMenuOpen(false)}
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="block text-white hover:text-teal-400"
+                onClick={() => setMenuOpen(false)}
+              >
+                Contact
+              </a>
+              <div className="flex space-x-4 mt-2">
+                <a
+                  href="https://github.com/reedthedev13"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-teal-400"
+                >
+                  <i className="fab fa-github text-xl"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/reed-lathrop/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white hover:text-teal-400"
+                >
+                  <i className="fab fa-linkedin-in text-xl"></i>
+                </a>
+              </div>
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
