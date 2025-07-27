@@ -2,13 +2,15 @@ import React from "react";
 import ProjectCard from "../components/ProjectCard";
 import GolfScoreCardImage from "../assets/GolfScoreCardSS.webp";
 import FinanceTracker from "../assets/FinanceTrackerSS.png";
-import FitnessTrack from "../assets/FitnessTrackSS.png";
 import WeatherApp from "../assets/WeatherAppSS.png";
 import NoteTaking from "../assets/NoteTakingSS.png";
 import ToDoList from "../assets/TDLSS.png";
 import StockWatch from "../assets/StockWatch.png";
 import JobAppPic from "../assets/JobAppPic.png";
 import MealPlanPic from "../assets/MealPlanPic.png";
+import FitnessTracker from "../assets/FitnessTrack2.jpg";
+import WeatherApp2 from "../assets/WeatherAppSS2.jpg";
+import GolfScore4 from "../assets/GolfScoreCardSS4.jpg";
 
 const Projects = () => {
   const projects = [
@@ -18,7 +20,7 @@ const Projects = () => {
       description:
         "An online tool that gives you the ability to score and store 18-hole golf rounds.",
       technologies: ["ReactJS", "TailwindCSS"],
-      image: GolfScoreCardImage,
+      image: GolfScore4,
       githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
       liveDemo: "https://golf-score-card-zeta.vercel.app/",
     },
@@ -38,7 +40,7 @@ const Projects = () => {
       description:
         "Fully functional 14-day weather forecast for St. Louis, Missouri.",
       technologies: ["React", "JavaScript", "TailwindCSS", "API integration"],
-      image: WeatherApp,
+      image: WeatherApp2,
       githubLink: "https://github.com/reedthedev13/14-day-weather",
       liveDemo: "https://14-day-weather.vercel.app/",
     },
@@ -57,7 +59,7 @@ const Projects = () => {
       description:
         "Track workouts by type, date, and reps. Includes analytics and charts - (App may load slowly due to backend hosting service)",
       technologies: ["React", "Python", "TailwindCSS", "REST API"],
-      image: FitnessTrack,
+      image: FitnessTracker,
       githubLink: "https://github.com/reedthedev13/fitess-tracker",
       liveDemo: "https://fitess-tracker.vercel.app/",
     },

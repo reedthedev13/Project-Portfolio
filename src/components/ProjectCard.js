@@ -6,11 +6,13 @@ const ProjectCard = ({ project }) => {
     <MotionWrapper>
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md transition hover:shadow-lg hover:-translate-y-1 duration-300 flex flex-col h-full">
         {/* Image */}
-        <div className="w-full max-w-full sm:max-w-[700px] md:max-w-[1000px] lg:max-w-[1200px] aspect-[16/9] overflow-hidden rounded-xl shadow-md">
+        <div className="w-full max-w-[800px] aspect-[16/9] overflow-hidden rounded-xl shadow-md mx-auto object-cover">
           <img
             src={project.image}
             alt={project.title}
             className="w-full h-full object-cover"
+            loading="lazy"
+            style={{ imageRendering: "crisp-edges" }}
           />
         </div>
 
