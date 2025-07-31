@@ -6,14 +6,14 @@ const ProjectCard = ({ project }) => {
     <MotionWrapper>
       <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md transition hover:shadow-lg hover:-translate-y-1 duration-300 flex flex-col h-full">
         {/* Image */}
-        <div className="w-full max-w-[800px] mx-auto aspect-[639/314] overflow-hidden rounded-xl shadow-md bg-gray-200 flex items-center justify-center">
+        <div className="w-full max-w-[800px] mx-auto aspect-[639/314] overflow-hidden rounded-xl shadow-md bg-transparent flex items-center justify-center">
           <img
             src={project.image}
             alt={project.title}
-            className="object-cover"
+            className="object-cover w-full h-full"
             loading="lazy"
             width={800}
-            height={393} // 800 * (314/639) ≈ 393
+            height={393}
             style={{
               display: "block",
               imageRendering: "auto",
