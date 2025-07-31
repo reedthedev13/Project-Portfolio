@@ -8,7 +8,7 @@ import MealPlanPic from "../assets/MealPlanSS3.jpg";
 import FitnessTracker from "../assets/FitnessTrack2.jpg";
 import WeatherApp2 from "../assets/WeatherAppSS2.jpg";
 import GolfScore2 from "../assets/GolfScoreCardSS4.jpg";
-import FinanceTracker2 from "../assets/FinanceTrackerSS2.jpg";
+import FinanceTracker3 from "../assets/FinanceTrackerSS3.jpg";
 
 const Projects = () => {
   const projects = [
@@ -28,7 +28,7 @@ const Projects = () => {
       description:
         "Includes: Expense tracking, monthly budget visualization, and CSV import - (App may load slowly due to backend hosting service)",
       technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
-      image: FinanceTracker2,
+      image: FinanceTracker3,
       githubLink: "https://github.com/reedthedev13/Finance-Dashboard-frontend",
       liveDemo: "https://finance-dashboard-frontend-eight.vercel.app/",
     },
@@ -112,7 +112,9 @@ const Projects = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+            <div className="w-full max-w-[800px] mx-auto">
+              <ProjectCard key={project.id} project={project} />
+            </div>
           ))}
         </div>
       </div>
