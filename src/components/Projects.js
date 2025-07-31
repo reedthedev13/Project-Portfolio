@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
-import NoteTaking2 from "../assets/NoteTakingSS2.jpg";
-import ToDoList2 from "../assets/TDLSS2.jpg";
-import StockWatch2 from "../assets/StockWatch2.jpg";
-import JobAppPic2 from "../assets/JobAppTrackSS2.jpg";
-import MealPlanPic from "../assets/MealPlanSS3.jpg";
-import FitnessTracker from "../assets/FitnessTrack2.jpg";
+import NoteTaking2 from "../assets/NoteTakeSS2.jpg";
+import ToDoList2 from "../assets/ToDoSS2.jpg";
+import StockWatch2 from "../assets/StockWatchSS2.jpg";
+import JobAppPic2 from "../assets/JobAppSS2.jpg";
+import MealPlanPic from "../assets/MealPlanSS2.jpg";
+import FitnessTracker from "../assets/FitnessTrackSS2.jpg";
 import WeatherApp2 from "../assets/WeatherAppSS2.jpg";
-import GolfScore2 from "../assets/GolfScoreCardSS4.jpg";
+import GolfScore2 from "../assets/GolfScoreSS2.jpg";
 import FinanceTracker3 from "../assets/FinanceTrackerSS3.jpg";
 
 const Projects = () => {
