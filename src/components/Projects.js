@@ -4,56 +4,75 @@ import NoteTaking3 from "../assets/NoteTakeSS3.jpg";
 import ToDoList3 from "../assets/ToDoSS3.jpg";
 import StockWatch3 from "../assets/StockWatchSS3.jpg";
 import JobAppPic3 from "../assets/JobAppSS3.jpg";
-import MealPlanPic from "../assets/MealPlanSS3.jpg";
+import Golfcard from "../assets/GolfScoreSS3.jpg";
 import FitnessTracker from "../assets/FitnessTrackSS3.jpg";
 import WeatherApp3 from "../assets/WeatherAppSS3.jpg";
-import GolfScore3 from "../assets/GolfScoreSS3.jpg";
 import FinanceTracker3 from "../assets/FinanceTrackerSS3.jpg";
+import SAASProject from "../assets/SaaSCloneSS1.jpg";
 
 const Projects = () => {
   const projects = [
     {
       id: 1,
+      title: "Project Management SAAS",
+      description:
+        "Full-stack web application for managing projects, tasks, and team collaboration. - (App may load slowly due to backend hosting service)",
+      technologies: [
+        "React",
+        "Tyepscript",
+        "TailwindCSS",
+        "Node.js",
+        "Express",
+        "Prisma",
+        "PostgreSQL",
+      ],
+      image: SAASProject,
+      githubLink:
+        "https://github.com/reedthedev13/Project-Management-SaaS-Clone",
+      liveDemo: "https://project-management-app-roan.vercel.app/",
+    },
+    {
+      id: 2,
       title: "Fitness Tracker",
       description:
-        "Track workouts by type, date, and reps. Includes analytics and charts - (App may load slowly due to backend hosting service)",
+        "Full-stack web application to track workouts by type, date, and reps. Includes analytics and charts - (App may load slowly due to backend hosting service)",
       technologies: ["React", "Python", "TailwindCSS", "REST API"],
       image: FitnessTracker,
       githubLink: "https://github.com/reedthedev13/fitess-tracker",
       liveDemo: "https://fitess-tracker.vercel.app/",
     },
     {
-      id: 2,
+      id: 3,
       title: "Personal Finance Dashboard",
       description:
-        "Includes: Expense tracking, monthly budget visualization, and CSV import - (App may load slowly due to backend hosting service)",
+        "Full-stack web app that includes: Expense tracking, monthly budget visualization, and CSV import - (App may load slowly due to backend hosting service)",
       technologies: ["React", "Chart.js", "TailWindCSS", "GO"],
       image: FinanceTracker3,
       githubLink: "https://github.com/reedthedev13/Finance-Dashboard-frontend",
       liveDemo: "https://finance-dashboard-frontend-eight.vercel.app/",
     },
     {
-      id: 3,
+      id: 4,
       title: "To-Do List",
       description:
-        "Organize tasks into categories and persist data - (App may load slowly due to backend hosting service)",
-      technologies: ["ReactJS", "TailWindCSS", "GO", "Gin"],
+        "Full-stack web app that allows users to organize tasks into categories and persist data - (App may load slowly due to backend hosting service)",
+      technologies: ["React", "JavaScript", "TailWindCSS", "GO", "Gin"],
       image: ToDoList3,
       githubLink: "https://github.com/reedthedev13/To-do-list-",
       liveDemo: "https://to-do-list-tau-taupe-69.vercel.app/",
     },
     {
-      id: 4,
-      title: "Recipe & Meal Planner",
+      id: 5,
+      title: "Golf Scorecard",
       description:
-        "Users can browse, add, and save recipes. Generate weekly meal plans. & view nutritional info",
-      technologies: ["React", "Typescript", "TailwindCSS", "GO"],
-      image: MealPlanPic,
+        "A web-app that allows users to store their golf scores and rounds based on the par!",
+      technologies: ["React", "JavaScript", "TailwindCSS"],
+      image: Golfcard,
       githubLink: "https://github.com/reedthedev13/Meal-Planner-App",
       liveDemo: "https://meal-planner-app-sepia.vercel.app/",
     },
     {
-      id: 5,
+      id: 6,
       title: "Note-Taking Web App",
       description: "Allows users to create and store notes.",
       technologies: ["React", "JavaScript", "TailwindCSS"],
@@ -62,7 +81,7 @@ const Projects = () => {
       liveDemo: "https://note-take-app-fix.vercel.app/",
     },
     {
-      id: 6,
+      id: 7,
       title: "Weather Forecast App",
       description:
         "Fully functional 14-day weather forecast for St. Louis, Missouri.",
@@ -70,16 +89,6 @@ const Projects = () => {
       image: WeatherApp3,
       githubLink: "https://github.com/reedthedev13/14-day-weather",
       liveDemo: "https://14-day-weather.vercel.app/",
-    },
-    {
-      id: 7,
-      title: "Golf Score Card",
-      description:
-        "An online tool that gives you the ability to score and store 18-hole golf rounds.",
-      technologies: ["ReactJS", "TailwindCSS"],
-      image: GolfScore3,
-      githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
-      liveDemo: "https://golf-score-card-zeta.vercel.app/",
     },
     {
       id: 8,
