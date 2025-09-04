@@ -42,11 +42,11 @@ function App() {
             Thanks for viewing my portfolio!
           </h3>
           <p className="text-gray-300">
-            I am a passionate software developer with a focus on building
-            scalable, maintainable, and user-friendly web applications. My
-            projects showcase a strong foundation in modern web technologies
-            including React, JavaScript, Typescript, TailwindCSS, and backend
-            development with Go and Python.
+            I am a passionate full-stack software developer with a focus on
+            building scalable, maintainable, and user-friendly full-stack web
+            applications. My projects showcase a strong foundation in modern web
+            technologies including React, JavaScript, Typescript, TailwindCSS,
+            and backend development with Node.js, GO, and Python.
           </p>
           <p className="mt-3 text-gray-300">
             Throughout my portfolio, you'll find a variety of projects

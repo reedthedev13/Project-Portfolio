@@ -63,13 +63,13 @@ const Projects = () => {
     },
     {
       id: 5,
-      title: "Golf Scorecard",
+      title: "Weather Forecast App",
       description:
-        "A web-app that allows users to store their golf scores and rounds based on the par!",
-      technologies: ["React", "JavaScript", "TailwindCSS"],
-      image: Golfcard,
-      githubLink: "https://github.com/reedthedev13/Meal-Planner-App",
-      liveDemo: "https://meal-planner-app-sepia.vercel.app/",
+        "Fully functional 14-day weather forecast for St. Louis, Missouri.",
+      technologies: ["React", "JavaScript", "TailwindCSS", "API integration"],
+      image: WeatherApp3,
+      githubLink: "https://github.com/reedthedev13/14-day-weather",
+      liveDemo: "https://14-day-weather.vercel.app/",
     },
     {
       id: 6,
@@ -82,13 +82,13 @@ const Projects = () => {
     },
     {
       id: 7,
-      title: "Weather Forecast App",
+      title: "Golf Scorecard",
       description:
-        "Fully functional 14-day weather forecast for St. Louis, Missouri.",
-      technologies: ["React", "JavaScript", "TailwindCSS", "API integration"],
-      image: WeatherApp3,
-      githubLink: "https://github.com/reedthedev13/14-day-weather",
-      liveDemo: "https://14-day-weather.vercel.app/",
+        "A web-app that allows users to store their golf scores and rounds based on the par!",
+      technologies: ["React", "JavaScript", "TailwindCSS"],
+      image: Golfcard,
+      githubLink: "https://github.com/reedthedev13/Golf-Scorecard-",
+      liveDemo: "https://golf-score-card-zeta.vercel.app/",
     },
     {
       id: 8,
