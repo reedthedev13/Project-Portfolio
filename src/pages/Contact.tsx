@@ -68,7 +68,7 @@ export const Contact = () => {
             📧 reedlathropbiz@gmail.com
           </a>
           <a
-            href="https://calendly.com/reedlathropbiz/30min"
+            href="https://calendly.com/reedlathropbiz/software-development-opportunity-call"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
