@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed w-full bg-transparent z-50 px-6 py-4 flex justify-between items-center">
-      <div className="text-2xl font-bold text-white">ReedTheDev</div>
+      <div className="text-2xl font-bold text-white">Reed Lathrop</div>
 
       {/* Desktop Links */}
       <ul className="hidden md:flex gap-8 text-white font-medium">

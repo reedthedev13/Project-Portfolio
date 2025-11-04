@@ -17,11 +17,12 @@ export const Hero = () => {
       >
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Hi, I’m <span className="text-indigo-400">Reed</span>
-          <br />A Freelance Full-Stack Developer
+          <br />A Full-Stack Developer
         </h1>
         <p className="text-gray-300 text-lg md:text-xl">
-          I build modern, high-performance web applications and APIs with
-          JavaScript, TypeScript, React, Go, and Python.
+          I design and develop modern, full-stack web applications and APIs with
+          a focus on performance, scalability, and maintainable code, using
+          React, TypeScript, JavaScript, Node.js, Go, and Python.
         </p>
 
         <div className="flex gap-4 mt-4">

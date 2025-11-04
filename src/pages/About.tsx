@@ -47,8 +47,8 @@ export const About = () => {
           sleek, responsive interfaces and clean backend architectures.
         </p>
         <p className="text-gray-300 text-lg">
-          My goal is to help clients turn ideas into functional, polished
-          digital products that users love.
+          My goal is to help turn ideas into functional, polished digital
+          products that users love.
         </p>
 
         {/* Skills */}
