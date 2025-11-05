@@ -36,7 +36,7 @@ export const Hero = () => {
           />
           <Button
             text="Hire Me"
-            className="bg-green-500 hover:bg-green-600"
+            className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
             onClick={() => (window.location.href = "/hire")}
           />
         </div>
