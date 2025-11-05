@@ -4,6 +4,11 @@ import { motion } from "framer-motion";
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
+  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <footer className="bg-gray-900 text-gray-300 py-8 px-6 md:px-24">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
@@ -44,7 +49,8 @@ export const Footer = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.95 }}
           href="#top"
-          className="text-gray-300 hover:text-white transition flex items-center gap-1"
+          onClick={scrollToTop}
+          className="text-gray-300 hover:text-white transition flex items-center gap-1 cursor-pointer"
         >
           <FaArrowUp /> Top
         </motion.a>
