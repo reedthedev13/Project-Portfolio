@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { Button } from "../components/Button";
 import profilePic from "../assets/FreelancePFP-modified.png";
+import { useNavigate } from "react-router-dom";
 
 export const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section
       id="home"
@@ -37,7 +40,7 @@ export const Hero = () => {
           <Button
             text="Hire Me"
             className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
-            onClick={() => (window.location.href = "/hire")}
+            onClick={() => navigate("/hire")}
           />
         </div>
       </motion.div>

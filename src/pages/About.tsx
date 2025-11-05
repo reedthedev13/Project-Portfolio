@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import profilePic from "../assets/FreelancePFP-modified.png";
 import { SkillBadge } from "../components/SkillBadge";
 
@@ -11,6 +12,8 @@ export const About = () => {
     "Go",
     "Python",
   ];
+
+  const navigate = useNavigate();
 
   return (
     <section
@@ -68,12 +71,12 @@ export const About = () => {
           >
             Download CV
           </a>
-          <a
-            href="mailto:reed@example.com"
+          <button
+            onClick={() => navigate("/hire")} // match the App.tsx route
             className="px-6 py-3 bg-green-500 rounded-lg font-medium shadow-lg hover:bg-green-600 transition"
           >
             Hire Me
-          </a>
+          </button>
         </div>
       </motion.div>
     </section>

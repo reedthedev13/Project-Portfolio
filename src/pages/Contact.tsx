@@ -65,10 +65,10 @@ export const Contact = () => {
         {/* Alternative Contact Options */}
         <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center text-gray-300 text-sm">
           <a
-            href="mailto:reedlathropbiz@gmail.com"
+            href="mailto:lathropreed713@gmail.com"
             className="hover:text-white transition"
           >
-            📧 reedlathropbiz@gmail.com
+            📧 lathropreed713@gmail.com
           </a>
           <a
             href="https://calendly.com/reedlathropbiz/software-development-opportunity-call"
