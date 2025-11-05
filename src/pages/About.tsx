@@ -63,20 +63,25 @@ export const About = () => {
 
         {/* Download CV / Hire Me Button */}
         <div className="mt-6 flex gap-4">
-          <a
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             href="/ProjectResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-indigo-500 rounded-lg font-medium shadow-lg hover:bg-indigo-600 transition"
+            className="px-6 py-3 bg-indigo-500 rounded-lg font-medium shadow-lg text-white hover:bg-indigo-600 transition"
           >
             Download CV
-          </a>
-          <button
+          </motion.a>
+
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => navigate("/hire")}
-            className="px-6 py-3 bg-green-500 rounded-lg font-medium shadow-lg hover:bg-green-600 transition"
+            className="px-6 py-3 bg-green-500 rounded-lg font-medium shadow-lg text-white hover:bg-green-600 transition"
           >
             Hire Me
-          </button>
+          </motion.button>
         </div>
       </motion.div>
     </section>
