@@ -64,7 +64,7 @@ export const About = () => {
         {/* Download CV / Hire Me Button */}
         <div className="mt-6 flex gap-4">
           <a
-            href="/Reed_Resume.pdf"
+            href="/ProjectResume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-indigo-500 rounded-lg font-medium shadow-lg hover:bg-indigo-600 transition"
@@ -72,7 +72,7 @@ export const About = () => {
             Download CV
           </a>
           <button
-            onClick={() => navigate("/hire")} // match the App.tsx route
+            onClick={() => navigate("/hire")}
             className="px-6 py-3 bg-green-500 rounded-lg font-medium shadow-lg hover:bg-green-600 transition"
           >
             Hire Me
