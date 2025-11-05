@@ -1,29 +1,77 @@
 import { ProjectCard } from "../components/ProjectCard";
 import { motion } from "framer-motion";
-import project1 from "../assets/project1.png";
-import project2 from "../assets/project2.png";
-import project3 from "../assets/project3.png";
+import SaaS from "../assets/SaasSS.png";
+import Finance from "../assets/FinanceSS.png";
+import Fitness from "../assets/FitnessSS.png";
+import toDo from "../assets/ToDoSS.png";
+import Notes from "../assets/NotesSS.png";
+import Jobs from "../assets/JobSS.png";
+import Weather from "../assets/WeatherSS.png";
+import Stocks from "../assets/StockSS.png";
+import Golf from "../assets/Golf.png";
 
 export const Projects = () => {
   const projects = [
     {
-      title: "Project One",
+      title: "Project Management SaaS Clone",
       description: "A sleek e-commerce app built with React and TailwindCSS.",
-      image: project1,
+      image: SaaS,
       demo: "#",
       github: "#",
     },
     {
-      title: "Project Two",
+      title: "Full-Stack Finance Tracker",
       description: "A fast API backend built with Go and PostgreSQL.",
-      image: project2,
+      image: Finance,
       demo: "#",
       github: "#",
     },
     {
-      title: "Project Three",
+      title: "Full-Stack Fitness Tracker",
       description: "A real-time chat application using Socket.io and Node.js.",
-      image: project3,
+      image: Fitness,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Full-Stack To-Do List",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: toDo,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Digital Notebook",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: Notes,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Job Application Tracker",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: Jobs,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Weather Forecast",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: Weather,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Stock Watchlist",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: Stocks,
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Golf Scorecard",
+      description: "A real-time chat application using Socket.io and Node.js.",
+      image: Golf,
       demo: "#",
       github: "#",
     },
