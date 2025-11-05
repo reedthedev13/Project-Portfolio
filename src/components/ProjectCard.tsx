@@ -33,15 +33,40 @@ export const ProjectCard = ({
       <div className="p-4">
         <h3 className="text-xl font-semibold text-white">{title}</h3>
         <p className="text-gray-300 mt-2 text-sm">{description}</p>
+        {/* Mobile buttons */}
+        {(github || demo) && (
+          <div className="mt-4 flex gap-4 md:hidden">
+            {demo && (
+              <a
+                href={demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 px-4 py-2 bg-indigo-500 rounded-lg text-white font-medium text-center hover:bg-indigo-600 transition"
+              >
+                Live Demo
+              </a>
+            )}
+            {github && (
+              <a
+                href={github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 px-4 py-2 bg-gray-700 rounded-lg text-white font-medium text-center hover:bg-gray-600 transition"
+              >
+                GitHub
+              </a>
+            )}
+          </div>
+        )}
       </div>
 
-      {/* Overlay Links */}
+      {/* Overlay Links for desktop */}
       {(github || demo) && (
         <motion.div
           initial={{ opacity: 0 }}
           whileHover={{ opacity: 1 }}
           transition={{ duration: 0.4, ease: "easeInOut" }}
-          className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-4"
+          className="absolute inset-0 bg-black bg-opacity-40  items-center justify-center gap-4 hidden md:flex"
         >
           {demo && (
             <motion.a
