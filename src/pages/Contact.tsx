@@ -4,8 +4,11 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen px-6 md:px-24 py-20 bg-gray-800 text-white flex flex-col items-center justify-center"
+      className="min-h-screen px-6 md:px-24 pt-32 pb-20 bg-gray-900 text-white flex flex-col items-center justify-center relative"
     >
+      {/* Gradient/angled top separator */}
+      <div className="absolute top-0 left-0 w-full h-16 bg-gradient-to-b from-gray-800 to-gray-900 -z-10"></div>
+
       {/* Section Title */}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
@@ -23,7 +26,7 @@ export const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.6, delay: 0.2 }}
-        className="w-full max-w-2xl bg-gray-900 rounded-xl shadow-lg p-8"
+        className="w-full max-w-2xl bg-gray-800 rounded-xl shadow-lg p-8"
       >
         <form
           action="mailto:reed@example.com"
@@ -35,21 +38,21 @@ export const Contact = () => {
             name="name"
             placeholder="Your Name"
             required
-            className="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+            className="px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
           />
           <input
             type="email"
             name="email"
             placeholder="Your Email"
             required
-            className="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+            className="px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
           />
           <textarea
             name="message"
             placeholder="Your Message"
             required
             rows={5}
-            className="px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition resize-none"
+            className="px-4 py-3 rounded-lg bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition resize-none"
           />
           <button
             type="submit"
