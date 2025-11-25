@@ -1,10 +1,16 @@
+import { memo, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "../components/Button";
 import profilePic from "../assets/FreelancePFP-modified.png";
 import { useNavigate } from "react-router-dom";
 
-export const Hero = () => {
+export const Hero = memo(() => {
   const navigate = useNavigate();
+  const [imgLoaded, setImgLoaded] = useState(false);
+
+  const handleScrollToProjects = () => {
+    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <section
@@ -14,7 +20,7 @@ export const Hero = () => {
       {/* Text Content */}
       <motion.div
         initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
+        animate={imgLoaded ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="md:w-1/2 flex flex-col gap-6"
       >
@@ -29,14 +35,7 @@ export const Hero = () => {
         </p>
 
         <div className="flex gap-4 mt-4">
-          <Button
-            text="See My Work"
-            onClick={() =>
-              document
-                .getElementById("projects")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-          />
+          <Button text="See My Work" onClick={handleScrollToProjects} />
           <Button
             text="Hire Me"
             className="bg-green-600 text-white px-6 py-3 rounded-lg shadow-md transition-colors"
@@ -48,16 +47,19 @@ export const Hero = () => {
       {/* Profile Image */}
       <motion.div
         initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
+        animate={imgLoaded ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.8 }}
         className="md:w-1/2 flex justify-center mt-12 md:mt-0"
       >
-        <img
+        <motion.img
           src={profilePic}
           alt="Reed Profile"
           className="w-64 h-64 md:w-80 md:h-80 rounded-full border-4 border-indigo-500 shadow-xl object-cover"
+          loading="lazy"
+          decoding="async"
+          onLoad={() => setImgLoaded(true)}
         />
       </motion.div>
     </section>
   );
-};
+});
